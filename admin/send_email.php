@@ -1,6 +1,9 @@
-<?php
+Das <?php
 
 declare(strict_types=1);
+
+// MailSender-Klasse einbinden
+require_once __DIR__ . '/../includes/MailSender.php';
 
 // E-Mail-Konfiguration
 $to = 'info@modified-shop.org';
@@ -16,12 +19,10 @@ $message .= "Mit freundlichen Grüßen,\n";
 $message .= "Ihr automatisiertes E-Mail-System\n\n";
 $message .= "P.S.: Diese E-Mail wurde am " . date('d.m.Y \u\m H:i:s') . " Uhr versendet.\n";
 
-// Header für die E-Mail
-$headers = "From: noreply@test-system.local\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+// MailSender-Instanz erstellen und E-Mail versenden
+$mailSender = new MailSender();
 
-// E-Mail versenden
-if (mail($to, $subject, $message, $headers)) {
+if ($mailSender->send($to, $subject, $message)) {
     echo "✅ E-Mail erfolgreich versendet an $to!<br>";
     echo "📧 Betreff: $subject<br>";
     echo "<hr>";
