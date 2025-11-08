@@ -14,7 +14,7 @@ function createEmailMessage(): string
 {
     $message = "Hallo liebes Modified-Shop Team! 👋\n\n";
     $message .= "Ein mutiger Admin hat gerade auf einen mysteriösen Button geklickt...\n\n";
-    $message .= "🎪 Witz des Tages:\n";
+    $message .= "🤡 Witz des Tages:\n";
     $message .= "Letzter Wunsch des Programmierers:\n";
     $message .= "Bitte ein Bit. 🍺🍺🍺\n\n";
     $message .= "Mit freundlichen Grüßen,\n";
