@@ -1,0 +1,10 @@
+# Zweck der CODEOWNERS-Datei
+# GitHub liest diese Datei automatisch aus.
+# Sie legt fest, wer Code-Owner bestimmter Dateien oder Ordner ist.
+# Wenn jemand in einem Pull Request diese Dateien ändert, werden die entsprechenden Owner automatisch als Reviewer hinzugefügt.
+# Optional: GitHub kann verlangen, dass alle Code-Owner den PR genehmigen, bevor ein Merge möglich ist (wenn in den Branch-Regeln der Repositor Einstellung aktiviert).
+
+*           @core-team
+/includes/  @modGTB
+/admin/     @Tomcraft1980 @modGTB
+/templates/ @modMarkus
