@@ -39,7 +39,7 @@ Vielen Dank, dass du zu modified-shop beitragen möchtest. Dieses Dokument soll 
   - „Alles-mal-aufgeräumt“-PRs mit riesigem Diff ohne Issue.
   - Vermischung von Style-Änderungen und Logikänderungen.
   - PRs ohne Beschreibung.
-  - Neue Featurs die nicht vor im Issue diskutiert wurden.
+  - Neue Featurs die nicht vorher im Issue diskutiert wurden.
 
 ## 5. Coding-Standards
 
